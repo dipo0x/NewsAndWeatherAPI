@@ -6,12 +6,12 @@ from .models import Weather, News
 from django.http import HttpResponse
 from newsapi import NewsApiClient
 #EVERYTHING WEATHER API
-api_key = "4401b62bcf88000c711e2c769205c9bf"
+api_key = "APIKEY"
 owm_obj=pyowm.OWM(api_key)
 
 #EVERYTHING NEWS API
 from newsapi import NewsApiClient
-newsapi = NewsApiClient(api_key='82f24d96198e42cc80de0c7a53d1e9ae')
+newsapi = NewsApiClient(api_key='APIKEY')
 
 # Create your views here.
 @api_view(['GET', "POST"])
